@@ -6,6 +6,8 @@ openui5-inputforcesuggestions control extends Input allowing developers to force
 
 You can checkout a demo with different configurations here: https://stermi.github.io/openui5-inputforcesuggestions/test/demo/
 
+![](http://g.recordit.co/4EaU20znHo.gif)
+
 ## Usage
 
 ### Configure manifest.json
