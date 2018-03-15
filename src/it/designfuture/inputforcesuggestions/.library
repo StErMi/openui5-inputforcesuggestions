@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+  <name>it.designfuture.inputforcesuggestions</name>
+  <vendor>OpenUI5 control that extend Input to allow developer to force suggestion selection</vendor>
+  <copyright>${copyright}</copyright>
+  <version>${version}</version>
+  
+  <documentation>OpenUI5 control that extend Input to allow developer to force suggestion selection</documentation>
+  
+  <dependencies>
+    <dependency>
+      <libraryName>sap.ui.core</libraryName>
+    </dependency>
+    <dependency>
+      <libraryName>sap.m</libraryName>
+    </dependency>
+  </dependencies>
+  
+  <appData>
+  </appData>
+
+</library>

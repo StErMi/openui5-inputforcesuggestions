@@ -1,0 +1,27 @@
+{
+	"it.designfuture.inputforcesuggestions": {
+        "icon": "sap-icon://feeder-arrow",
+        "name": "Input Force Suggestions",
+		"description": "OpenUI5 control that extend Input to allow developer to force suggestion selection" ,
+		"source": "https://github.com/StErMi/openui5-inputforcesuggestions",
+		"documentation": "https://github.com/StErMi/openui5-inputforcesuggestions/blob/master/README.md",
+		"demo": "https://stermi.github.io/openui5-inputforcesuggestions/test/demo/",
+		"version": "0.0.1",
+		"license": "Apache 2.0",
+		"content": {
+			"InputForceSuggestions": {
+				"id": "InputForceSuggestions",
+				"name": "Input Force Suggestions",
+				"type": "control",
+				"version": "0.0.1",
+				"description": "OpenUI5 control that extend Input to allow developer to force suggestion selection",
+				"samples": [{
+					"id": "InputForceSuggestions",
+					"name": "Input Force Suggestions",
+					"description": "OpenUI5 control that extend Input to allow developer to force suggestion selection",
+					"url": "https://stermi.github.io/openui5-inputforcesuggestions/test/demo/"
+				}]
+			}
+		}
+	}
+}

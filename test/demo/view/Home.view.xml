@@ -1,0 +1,101 @@
+<mvc:View controllerName="Demo.controller.Home" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	displayBlock="true" xmlns="sap.m" xmlns:df="it.designfuture.inputforcesuggestions">
+	<App>
+		<pages>
+			<Page title="Demo">
+				<content>
+					<Panel>
+						<headerToolbar>
+							<Toolbar>
+								<Title level="H2" text="{i18n>example1Title}" />
+							</Toolbar>
+						</headerToolbar>
+						<df:InputSuggestions
+							showSuggestion="true"
+							suggestionItems="{/suggestions}" >
+							<df:suggestionItems>
+								<core:Item key="{key}" text="{text}" />
+							</df:suggestionItems>
+						</df:InputSuggestions>
+					</Panel>
+					
+					<Panel>
+						<headerToolbar>
+							<Toolbar>
+								<Title level="H2" text="{i18n>example2Title}" />
+							</Toolbar>
+						</headerToolbar>
+						<df:InputSuggestions
+							type="Text"
+							showSuggestion="true"
+							suggestionItems="{/suggestions}" >
+							<df:suggestionItems>
+								<core:ListItem text="{text}" additionalText="{subtext}"/>
+							</df:suggestionItems>
+						</df:InputSuggestions>
+					</Panel>
+					
+					<Panel>
+						<headerToolbar>
+							<Toolbar>
+								<Title level="H2" text="{i18n>example3Title}" />
+							</Toolbar>
+						</headerToolbar>
+						<df:InputSuggestions
+							type="Text"
+							showSuggestion="true"
+							showTableSuggestionValueHelp="false"
+							forceSuggestionSelection="true"
+							suggestionRows="{/ProductCollection}">
+							<df:suggestionColumns>
+								<Column
+									hAlign="Begin"
+									popinDisplay="Inline"
+									demandPopin="true">
+									<Label text="Name"/>
+								</Column>
+								<Column
+									hAlign="Center"
+									popinDisplay="Inline"
+									demandPopin="true"
+									minScreenWidth="Tablet">
+									<Label text="Product ID"/>
+								</Column>
+								<Column
+									hAlign="Center"
+									popinDisplay="Inline"
+									demandPopin="false"
+									minScreenWidth="Tablet">
+									<Label text="Supplier Name"/>
+								</Column>
+								<Column
+									hAlign="End"
+									popinDisplay="Inline"
+									demandPopin="true">
+									<Label text="Price"/>
+								</Column>
+							</df:suggestionColumns>
+							<df:suggestionRows>
+								<ColumnListItem>
+									<cells>
+										<Label text="{Name}"/>
+										<Label text="{ProductId}"/>
+										<Label text="{SupplierName}"/>
+										<Label
+											text="{
+				 		 						parts:[{path:'Price'},{path:'CurrencyCode'}],
+												type: 'sap.ui.model.type.Currency',
+						 						formatOptions: {showMeasure: true}
+											}"/>
+									</cells>
+								</ColumnListItem>
+							</df:suggestionRows>
+						</df:InputSuggestions>
+					</Panel>
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
